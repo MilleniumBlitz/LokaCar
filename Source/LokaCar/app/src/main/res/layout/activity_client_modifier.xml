@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.eni.lokacar.ClientModifierActivity"
+    android:orientation="vertical"
+    android:id="@+id/view_client_modifier">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nom"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_client_modifier_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="@+id/et_client_modifier_prenom"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text|textCapSentences"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prenom"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_client_modifier_prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="@+id/et_client_modifier_telephone"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text|textCapSentences"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telephone"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_client_modifier_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionGo"
+            android:inputType="phone"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

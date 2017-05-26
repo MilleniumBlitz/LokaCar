@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.eni.lokacar.AgenceActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_agence_nom_agence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_agence_nom_agence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nom_agence"
+            android:imeOptions="actionGo"
+            android:inputType="textCapSentences|textNoSuggestions"
+            android:maxLines="1" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="@string/chiffre_d_affaire"/>
+
+    <TextView
+        android:id="@+id/tv_agence_chiffre_affaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="999 999.00 €"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="@string/nombre_de_locations_total"/>
+
+    <TextView
+        android:id="@+id/tv_agence_nb_locations_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="263"
+        android:textSize="24sp" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="@string/nombre_de_locations_en_cours"/>
+
+    <TextView
+        android:id="@+id/tv_agence_nb_locations_en_cours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="@string/nombre_de_locations_termin_es"/>
+
+    <TextView
+        android:id="@+id/tv_agence_nb_locations_terminees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="248"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="@string/nombre_de_locations_d_pass_es"/>
+
+    <TextView
+        android:id="@+id/tv_agence_nb_locations_depassees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="18"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="@string/nombre_de_v_hicules_disponibles"/>
+
+    <TextView
+        android:id="@+id/tv_agence_nb_vehicules_disponibles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="124 / 152"
+        android:textSize="24sp" />
+
+</LinearLayout>

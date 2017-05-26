@@ -1,0 +1,8 @@
+Règles métiers : 
+
+	1. Le nom de l'agence et le mot de passe est enregistré dans les préférences.
+	2. Une location ne concerne qu'un client et qu'un véhicule.
+	3. Un véhicule à un "prix par jour". Le prix par jour est enregistré en dur dans la location pour le concerver en cas de changement du prix du véhicule.
+	4. Le coût total d'une location vaut : 	Prix par jour x (Date rendu - date début) + cout supplémentaire.
+	5. Une photo est associé à une entité unique. Soit elle correspond à un véhicule, soit elle correspond à une location.
+		Les photos sont stockées sur le téléphone et identifiées selon le nommage : IdEntite_numPhoto.jpg.

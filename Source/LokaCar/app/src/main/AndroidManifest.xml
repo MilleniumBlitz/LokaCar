@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.eni.lokacar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- CLIENTS -->
+        <activity
+            android:name=".ClientListeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ClientModifierActivity"
+            android:parentActivityName=".ClientListeActivity" />
+
+        <!-- LOCATIONS -->
+        <activity
+            android:name=".LocationListeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LocationDetailActivity"
+            android:parentActivityName=".LocationListeActivity" />
+        <activity
+            android:name=".LocationModifierActivity"
+            android:parentActivityName=".LocationDetailActivity" />
+
+        <!-- VEHICULES -->
+        <activity
+            android:name=".VehiculeListeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".VehiculeModifierActivity"
+            android:parentActivityName=".VehiculeListeActivity" />
+
+        <!-- AGENCE -->
+        <activity
+            android:name=".AgenceActivity"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnu_location_en_cours"
+        android:title="@string/location_en_cours"
+        android:onClick="onClickMnuLocationEnCours"/>
+
+    <item
+        android:id="@+id/mnu_historique"
+        android:title="@string/historique"
+        android:onClick="onClickMnuHistorique"/>
+
+    <item
+        android:id="@+id/mnu_liste_clients"
+        android:title="@string/liste_des_clients"
+        android:onClick="onClickMnuListeClients"/>
+
+    <item
+        android:id="@+id/mnu_agence"
+        android:title="@string/mon_agence"
+        android:onClick="onClickMnuAgence"/>
+
+    <item
+        android:id="@+id/mnu_gestion_parking"
+        android:title="mon parking"
+        android:onClick="onClickGestionParking"/>
+
+</menu>

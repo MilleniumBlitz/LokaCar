@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_vehicule_image"
+            android:background="@mipmap/default_image_cars"
+            android:layout_margin="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Marque vehicule"
+            android:id="@+id/tv_vehicule_layout_marque"
+            android:layout_toRightOf="@+id/iv_vehicule_image"
+             />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Modele vehicule"
+            android:id="@+id/tv_vehicule_layout_modele"
+            android:layout_below="@+id/tv_vehicule_layout_marque"
+            android:layout_toRightOf="@+id/iv_vehicule_image"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nb places vehicule"
+            android:id="@+id/tv_vehicule_layout_nbplaces"
+            android:layout_below="@+id/tv_vehicule_layout_modele"
+            android:layout_toRightOf="@id/iv_vehicule_image"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indisponible"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_vehicule_layout_disponible"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_marginRight="35dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_vehicule_layout_coutparjour"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_vehicule_layout_marque"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="/Jour"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_vehicule_layout_text_coutparjour"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_vehicule_layout_coutparjour" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,147 @@
+Liste des activités : 
+
+	MainActivity (Blank Activity)
+		Point d'entrée du programme.
+		SplashScreen qui charge les données et l'application. 
+		Ouverture de ConnexionActivity à la fin du traitement.
+
+	ConnexionActivity (Blank Activity)
+		Permet de saisir le nom de l'agence et le mot de passe.
+		Si le nom de mot de passe et l'agence sont déjà enregistrés, il faut juste saisir le mot de passe. Si le mot de passe est correct on affiche ListeLocationsActivity.
+		
+	**********************************************************************************
+	MenuPrincipalActivity (Input Drawable Activity)
+		Menu latéral
+			Locations en cours (affiché par défaut)
+			Locations passées
+			Liste des véhicules
+				Indiqué si loué actuellement
+				Image du véhicule dans la liste
+			Liste des clients
+			Recherche 
+				Formulaire différent en fonction de la liste affichée :
+					Véhicule :
+						- Désignation (string)
+						- Type (liste déroulante)
+					Clients : 
+						- Nom / prénom
+			Mon agence
+				Ecran avec les principales informations de l'agence : 
+					- Nom
+					- Chiffre d'affaire
+					- Nombre total de locations
+					- Nombre de locations en cours
+					- Nombre de locations terminées
+					- Nombre de locations dépassées
+					- Nombre de véhicules loués actuellement ("X / nb total")
+		
+	**********************************************************************************
+	
+	LocationListeActivity (EmptyActivity)
+		Contenu : 
+			Selon le mode envoyé en paramètre (LISTE_LOC_EN_COURS, LISTE_LOC_PASSEES) l'activité affiche une liste de location.
+			Cliquer sur une location affiche le détail de la location (LocationDetailActivity)
+			Ligne de la location : 
+				- Photo, marque et modèle du véhicule
+				- Date contrat
+				- Etat (En cours / terminée)
+				- Cout total
+		Menu : 
+			Bouton retour
+			Recherche : 
+				- Client (string)
+				- Rendu (oui / non)
+			Créer : affiche LocationDetailActivity en mode création.
+			
+	
+	LocationModifierActivity (EmptyActivity)
+		Contenu : 
+			- Cout total
+			- Véhicule prêté (fragment)
+			- Date du contrat
+			- Date de début du prêt
+			- Date de rendu prévu
+			- Date de rendu réel
+			- Photos location
+			- Commentaire avant location
+			- Commentaire après location
+			- Cout suplémentaire
+		Menu : 
+			Bouton modifier (seulement si la location est en cours) -> LocationDetailActivity en mode création avec l'ID envoyé en paramètre
+	
+	
+	LocationModifierActivity (EmptyActivity)
+		Contenu : 
+			Si un id de location est passé en paramètre, les champs sont remplis.
+			Si la location est passée alors il n'est pas possible d'enregistrer et les champs sont grisés.
+			Il n'est possible de sélectionner que les véhicules de l'agence disponibles.
+			Champs : 
+				- Marque véhicule (Liste déroulante, REQUIS)
+				- Modèle véhicule (Liste déroulante, REQUIS)
+				- Rappel des infos du véhicule (Photo, marque, modèle, places, prix par jour) = fragment
+				- Client (Liste déroulante, REQUIS))
+				- Bouton nouveau client -> ClientAjouterActivity
+				- Date de location prévue (REQUIS)
+				- Date de rendu prévu (REQUIS)
+				- Grille des photos de la location
+				- Bouton ajouter une photo (Appareil photo ou depuis stockage interne)
+				- Commentaire avant location(Multiligne)
+				- Commentaire après location(Multiligne)
+				- Cout supplémentaire 
+				- Rappel du motant total
+				
+		Menu : 
+			Bouton retour
+			Bouton enregistrer
+			Bouton supprimer
+		
+	
+	VehiculeListeActivity (EmptyActivity)
+		Contenu :
+			Liste des véhicules de l'agence.
+			Les véhicules actuellement loués sont indiqués par la mention "INDISPONIBLE"
+			Cliquer sur un véhicule pour le modifier -> VehiculeModifierActivity avec id véhicule passé en paramètre
+			Ligne d'un véhicule : 
+				- 1ère Photo du véhicule
+				- Marque
+				- Modèle
+				- Nb Places
+				- Coût par jour
+			
+		Menu :
+			Bouton retour
+			Rechercher : 
+				- Marque (liste déroulante)
+				- Modèle (liste déroulante)
+				- Disponible / indisponible (Liste déroulante)
+				- nb places max (int)
+			Ajouter : 
+				Affiche VehiculeDetailActivity en mode création.
+				
+	
+	VehiculeModifierActivity (EmptyActivity)
+		Contenu
+			- Marque (Liste déroulante, REQUIS)
+			- Modèle (Liste déroulante, REQUIS)
+			- Rappel des infos du véhicule
+			- Photos (ajouter une photo à partir de l'appareil photo ou du stockage interne)
+			- Prix par jour (INT, REQUIS)
+		
+		Menu :
+			Bouton retour
+			Enregistrer
+			Bouton supprimer (avec confirmation)
+		
+	ClientListeActivity (EmptyActivity)
+		Contenu :
+			Liste des clients de l'agence
+			Cliquer sur la ligne affiche le détail du client
+			Ligne
+			
+		
+		
+		
+		
+		
+		
+	

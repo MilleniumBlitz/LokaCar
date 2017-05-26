@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.eni.lokacar.VehiculeModifierActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Marque"
+            android:id="@+id/tv_vehicule_modifier_title_spinner_marque"/>
+        <Spinner
+            android:id="@+id/sp_vehicule_modifier_marque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_vehicule_modifier_title_spinner_modele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Modele" />
+
+        <Spinner
+            android:id="@+id/sp_vehicule_modifier_modele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Photos locations"
+            android:id="@+id/tv_vehicule_modifier_title_image"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:columnCount="4"
+            android:rowCount="3"
+            android:id="@+id/gl_vehicule_modifier_photos">
+
+            <ImageView
+                android:src="@mipmap/default_image_cars"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_margin="10dp"
+                />
+
+            <ImageView
+                android:src="@mipmap/default_image_cars"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_margin="10dp"
+                />
+
+            <ImageView
+                android:src="@mipmap/default_image_cars"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:layout_margin="10dp"
+                />
+
+            <ImageView
+                android:src="@mipmap/default_image_cars"
+                android:layout_column="3"
+                android:layout_row="0"
+                android:layout_margin="10dp"
+                />
+
+            <ImageView
+                android:src="@mipmap/default_image_cars"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_margin="10dp"
+                />
+
+            <ImageView
+                android:src="@mipmap/default_image_cars"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_margin="10dp"
+                />
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_vehicule_modifier_title_coutparjour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Coût par jour" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_vehicule_modifier_coutparjour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:width="100dp"
+                android:inputType="number"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="€" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/et_vehicule_modifier_coutparjour"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:id="@+id/gl_vehicule_modifier_disponible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="Disponible"
+                android:id="@+id/tv_vehicule_modifier_title_disponible"/>
+
+            <CheckBox android:id="@+id/cb_vehicule_modifier_disponible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                />
+        </GridLayout>
+
+    </LinearLayout>
+</LinearLayout>

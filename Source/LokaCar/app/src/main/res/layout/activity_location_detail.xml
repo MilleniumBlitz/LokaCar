@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.eni.lokacar.LocationDetailActivity"
+    android:orientation="vertical"
+    android:id="@+id/view_location_detail">
+
+    <TextView
+        android:id="@+id/tv_location_detail_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Nom prénom"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_location_detail_vehicule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Vehicule"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de signature"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_location_detail_date_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/05/2017" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de début de la location"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_location_detail_date_debut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/05/2017" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de fin prévue"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_location_detail_date_fin_prevue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/05/2017" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commentaire pré-location"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_location_detail_commentaire_avant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:text="15/05/2017" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_location_commentaire_apres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commentaire post-location"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_location_detail_commentaire_apres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:text="15/05/2017" />
+
+    </LinearLayout>
+
+</LinearLayout>

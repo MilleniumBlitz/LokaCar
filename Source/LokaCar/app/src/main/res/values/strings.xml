@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">LokaCar</string>
+    <string name="location_en_cours">Location en cours</string>
+    <string name="historique">Historique</string>
+    <string name="liste_des_clients">Liste des clients</string>
+    <string name="mon_agence">Mon agence</string>
+    <string name="location_client">Client location</string>
+    <string name="location_voiture">Voiture location</string>
+    <string name="location_dates">Date location</string>
+    <string name="location_prix">Prix location</string>
+    <string name="rechercher">Rechercher</string>
+    <string name="ajouter">Ajouter</string>
+
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="telephone">Téléphone</string>
+    <string name="aucun_commentaire">Aucun commentaire n\'a été renseigné</string>
+
+    <string name="creation_location">Création d\'une location</string>
+    <string name="modification_location">Modification d\'une location</string>
+    <string name="detail_location">Détail de la location</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="mnu_ajouter">Ajouter</string>
+    <string name="mnu_rechercher">Rechercher</string>
+    <string name="nom_agence">Nom de l\'agence</string>
+    <string name="chiffre_d_affaire">Chiffre d\'affaire</string>
+    <string name="nombre_de_locations_total">Nombre de locations total</string>
+    <string name="nombre_de_locations_en_cours">Nombre de locations en cours</string>
+    <string name="nombre_de_locations_termin_es">Nombre de locations terminées</string>
+    <string name="nombre_de_locations_d_pass_es">Nombre de locations dépassées</string>
+    <string name="nombre_de_v_hicules_indisponibles">Nombre de véhicules indisponibles</string>
+    <string name="nombre_de_v_hicules_disponibles">Nombre de véhicules disponibles</string>
+    <string name="confirmation_suppression_client">Etes vous sur de vouloir supprimer ce client ?</string>
+    <string name="title_activity_login">Se connecter</string>
+</resources>
